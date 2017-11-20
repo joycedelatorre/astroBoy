@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Trivia Game</title>
+
+		<!--My own CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css"> 
+
+		<!-- bootstrap (no reset because I used bootstrap) --> 
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" crossorigin="anonymous">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="assets/javascript/app.js"></script>
+
+	</head>
+	<body>
+		<video poster="assets/images/cosmos_vid.mov" playsinline autoplay muted loop>
+				<source src="assets/images/cosmos_vid.mov" type="video/mp4">
+		</video>
+		<audio src="assets/images/astro_boy.m4a" autoplay loop></audio>
+		<div class="container">
+			<div class="row pad"></div> <!-- PADDING -->
+
+			<div class="row banner" >
+				<div class="col-lg-2"> </div>
+				<div class="col-lg-8 banner">
+				  Astro Boy Trivia
+			    </div>
+			    <div class="col-lg-2"> </div>
+			</div>
+
+			<br>
+			<br>
+
+			<div class="row">
+				<!-- <div class ="col-lg-12" id="timer"></div> -->
+				<div class ="col-lg-12">
+					<button type="button" class="btn btn-secondary btn-lg btn-block" id="start">START</button>
+				</div>
+				<div class ="col-lg-12" id="display"></div>
+				<br>
+				<div class ="col-lg-12" id="question"></div>
+			</div>
+			<br>
+			<br>
+			<div class = "row">
+				<div class ="col-lg-4"></div>
+				<div class ="col-lg-4">
+					<button class=" answer" id="optionA" data-answer="a">
+					</button>
+				</div>
+				<div class ="col-lg-4"></div>
+			</div>
+			<br>
+			<br>
+			<div class = "row">
+				<div class ="col-lg-4"></div>
+				<div class ="col-lg-4">
+					<button  class =" answer" id="optionB" data-answer="b">
+					</button>
+				</div>
+				<div class ="col-lg-4"></div>
+			</div>
+			<br>
+			<br>
+			<div class="row">
+				<div class="col-lg-4"></div>
+				<div class="col-lg-4">
+					<button class=" answer"  id="optionC" data-answer="c">
+					</button>
+				</div>
+				<div class="col-lg-4"></div>
+			</div>
+			<br>
+			<br>
+			<div class="row">
+				<div class="col-lg-4"></div>
+				<div class="col-lg-4">
+					<button class=" answer" id="optionD" data-answer="d">
+					</button>
+				</div>
+				<div class="col-lg-4"></div>
+			</div>
+			<br>
+			<br>
+			<div class ="col-lg-12" id="scoring_board"></div>
+			<br>
+			<br>
+			<div class ="col-lg-12" id="image"></div>
+			<div class ="col-lg-12" id="imageCorrect">
+				<p>CORRECT!</p>
+				<br>
+				<img src='assets/images/Astro_correct.gif'>
+			</div>
+			<div class ="col-lg-12" id="imageWrong">
+				<p class="wrong">NOPE!</p>
+				<br>
+				<img src='assets/images/Astro_wrong.gif'>
+			</div>
+			<div class ="col-lg-12" id="imageTimesUp">
+				<p>Times UP!</p>
+				<br>
+				<img src='assets/images/astroboy_timesUp.gif'>
+			</div>
+			<div class ="col-lg-12">
+				<button type="button" class="btn btn-secondary btn-lg btn-block" id="restart">RESTART</button>
+			</div>
+			<br>
+			<br>
+
+		</div>	 
+	</body>
+</html>
